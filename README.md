@@ -1,16 +1,26 @@
-# oRecipes
+# React training project: orecipes
 
-Amusons-nous avec React, Redux, React Router :tada:
+![made-with-react](https://img.shields.io/badge/Made_with-React_/Redux-orange?style=flat) ![made-with-symfony](https://img.shields.io/badge/Made_with-React/Router-blue?style=flat)  ![GitHub release](https://img.shields.io/badge/version-1.0.0-lightgrey?style=flat)  
 
-## Objectif
+Discovery of ReactJs - Redux - React/Router.
 
-![](resultat.gif)
+- To work the project needs a server on localhost: 3001
 
+## Install Project dependencies
 
-## Instructions
+```sh
+cd orecipes/
+```
 
-- Commencer par du statique
-- Poser les props
-- Utiliser les data statiques
-- Utiliser le router pour les différentes vues
-- `slugify` pourrait être intéressant pour les urls :thinking:
+```sh
+yarn
+```
+
+## Launch development server
+
+```sh
+yarn start
+```
+
+- listening on : <http://localhost:8080>
+

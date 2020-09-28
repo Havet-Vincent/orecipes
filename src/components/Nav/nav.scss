@@ -1,0 +1,27 @@
+@import 'src/styles/vars';
+
+.nav {
+  width: $navWidth;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-top: 1em;
+  border-right: 4px solid $titleBackgroundColor;
+  background: rgb(236, 232, 223);
+
+  .nav-item {
+    display: block;
+    margin: 1em 1.5em;
+    color: #222;
+    cursor: pointer;
+
+    &:hover {
+      color: #777777;
+    }
+
+    &.nav-item-active {
+      color: $mainColor;
+      font-weight: bold;
+    }
+  }
+}

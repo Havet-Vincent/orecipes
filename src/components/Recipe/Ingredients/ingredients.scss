@@ -1,0 +1,25 @@
+// j'importe le fichier pour pouvoir utiliser les variables
+@import 'src/styles/_vars.scss';
+
+.ingredients {
+  margin-bottom: 2rem;
+
+  .ingredient {
+    padding: 0.8rem 2rem;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+
+  .quantity {
+    // utilisation de la variable mainColor
+    background-color: $mainColor;
+    color: #fff;
+    padding: .3rem 1rem;
+    border-radius: .3rem;
+    margin-right: .5rem;
+  }
+}

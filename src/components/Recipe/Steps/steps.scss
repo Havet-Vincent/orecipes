@@ -1,0 +1,37 @@
+@import 'src/styles/_vars.scss';
+
+.steps {
+  background-color: #f2f2f2;
+  border-radius: 1rem 1rem 0 0;
+  padding: 2rem;
+  font-size: 1.2em;
+  text-align: left;
+
+  .step {
+    line-height: 1.2;
+    padding-bottom: 0.8em;
+    // pour la deuxième solution : tout-terrain
+    position: relative;
+    padding-left: 1.8rem;
+    
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+    // création d'un pseudo-élément, pour la décoration
+    // objectif : avoir une pseudo div orange, de 1 pixel de haut et 1.2rem de large
+    &::before {
+      // content est indispensable, sinon rien ne s'affiche
+      content: "";
+      background-color: $mainColor;
+      width: 1.2rem;
+      height: 1px;
+      // première solution : classe
+      /*display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5rem;*/
+      // deuxième solution : tout-terrain
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0.7rem;
+    }
+  }
+}
